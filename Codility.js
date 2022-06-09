@@ -167,7 +167,7 @@ function GenomicRangeQuery(S, P, Q) {
   return res;
 }
 
-//05-03
+//05-04
 //https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 function MinAvgTwoSlice(A) {
   for (let i = 0; i < A.length - 2; i++) {
