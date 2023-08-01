@@ -118,6 +118,21 @@ function MaxCounters(N, A) {
   return counters;
 }
 
+//simple solution
+function MaxCounters(N, A) {
+  let max = 0;
+  let counters = new Array(N).fill(0);
+  for (let item of arr) {
+    if (item > N) {
+      counters.fill(max);
+    } else {
+      counters[item - 1] += 1;
+      max = Math.max(max, counters[item - 1]);
+    }
+  }
+  return counters;
+}
+
 //04-04
 //https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 function MissingInteger(A) {
