@@ -118,7 +118,7 @@ function MaxCounters(N, A) {
   return counters;
 }
 
-//simple solution
+//simple solution but with perfomance issue : 66%
 function MaxCounters(N, A) {
   let max = 0;
   let counters = new Array(N).fill(0);
