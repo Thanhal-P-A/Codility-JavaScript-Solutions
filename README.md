@@ -132,7 +132,7 @@ function solution(N, A) {
 ```
 
 ```
-// simple solution
+// simple solution but with perfomance issue : 66%
 function solution(N, A) {
   let max = 0;
   let counters = new Array(N).fill(0);
