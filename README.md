@@ -297,3 +297,20 @@ function sortArray(A) {
 }
 
 ```
+
+```
+//My solution with total score of 81% with 100% correctness
+function NumberOfDiscIntersections(A) {
+  let n = A.length
+  let count = 0;
+    for(let i=0; i<n-1; i++){
+      for(let j=i+1; j<n; j++){
+        if(i+A[i] >= j-A[j]){
+          ++count;
+        }
+        if(count > 10000000) return -1;
+      }
+    }
+  return count;
+}
+```
