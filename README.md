@@ -131,6 +131,23 @@ function solution(N, A) {
 }
 ```
 
+```
+// simple solution
+function solution(N, A) {
+  let max = 0;
+  let counters = new Array(N).fill(0);
+  for (let item of arr) {
+    if (item > N) {
+      counters.fill(max);
+    } else {
+      counters[item - 1] += 1;
+      max = Math.max(max, counters[item - 1]);
+    }
+  }
+  return counters;
+}
+```
+
 #### Task 04 [MissingInteger](https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/)
 ```
 function solution(A) {
