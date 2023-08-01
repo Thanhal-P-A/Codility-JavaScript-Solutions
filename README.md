@@ -136,7 +136,7 @@ function solution(N, A) {
 function solution(N, A) {
   let max = 0;
   let counters = new Array(N).fill(0);
-  for (let item of arr) {
+  for (let item of A) {
     if (item > N) {
       counters.fill(max);
     } else {
